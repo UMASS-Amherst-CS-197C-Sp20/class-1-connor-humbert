@@ -10,8 +10,8 @@ int main(void) {
 		Google rand() and srand()
 	*/
 	//////////Your code here//////////
-	int secret = 77;
-
+	int secret = rand();
+	
 	//////////End of the code/////////
 
 	printf("Welcome to my guessing game!\n");
@@ -34,4 +34,5 @@ int main(void) {
 			printf("Too low! Guess again.\n");
 		}
 	}
+
 }

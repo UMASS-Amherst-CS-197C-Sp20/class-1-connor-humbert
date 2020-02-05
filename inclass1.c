@@ -33,6 +33,10 @@ int main(int argc, char** argv){
 	printf("#####student code start#####\n");
 	//////////Your code here//////////
 
+	int number = 1;
+	float type_float = 1.0f;
+	printf("size of int+float: %lu\n", sizeof(number+type_float));
+
 	//example
 	int type_int = 0;
 	long type_long = 0;
@@ -81,7 +85,11 @@ int main(int argc, char** argv){
 	*/
 	printf("#####student code start#####\n");
     //////////Your code here//////////
-
+	printf("INT_MAX + 1 : %d\n", INT_MAX + 1);
+	printf("UNIT_MAX + 1 : %u\n", UINT_MAX + 1);
+	printf("LONG_MAX + 1 : %ld\n", LONG_MAX + 1);
+	printf("FLT_MAX + 1 : %g\n", FLT_MAX + 1);
+	printf("FLT_MAX + 1000 : %g\n", FLT_MAX + 1000);
 	//////////End of the code/////////
 	printf("#####student code end#####\n");
 
@@ -95,6 +103,7 @@ int main(int argc, char** argv){
 	/*
 		TODO:
 		Why we are getting this result?
+		printf("we are getting this result because s1 and s2 are both of type char and 		      allocate the same amount of memory");
 	*/
 
 	printf("\nIs 1 equals to true? \n");
@@ -124,8 +133,8 @@ int main(int argc, char** argv){
     }
 
     //TODO: uncommend below code after complete print_string fucntion
-    //print_string(s1);
-    //print_string(s2);
+    print_string(s1);
+    print_string(s2);
 
     //exit status for the OS, 0 means no error.
     //It is different than the C true/false value
@@ -145,4 +154,8 @@ void func1(int* i){
 	Add a function that name as "print_string", which takes a string
 	as input and no output.
 	This function needs to print the string in the concole.
+
 */
+ void print_string(char* s){
+      printf("The string is : %s", s);
+}
